@@ -1,0 +1,13 @@
+.fade-container {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-form {
+    opacity: 1;
+  }
+  
+  .fade-form.hidden {
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events on hidden form */
+  }
+  
