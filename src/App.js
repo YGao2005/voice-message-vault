@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import PasscodeInput from './PasscodeInput';
-import AudioPlayer from './AudioPlayer';
 import './App.css'; // Import your CSS file for global styling
+import BackgroundMusic from './BackgroundMusic';
+import BackgroundNoise from './BackgroundNoise';
 
 const audioMappings = {
   passcode1: '/assets/testing.mp3',
@@ -43,14 +44,23 @@ const App = () => {
   };
 
   return (
-    <div className={`app-container ${isAudioPlaying ? 'fade-out' : 'fade-in'}`}>
-      <h1>Passcode Input</h1>
-      {(
-        <PasscodeInput
-          onSubmit={handlePasscodeSubmit}
-          audioMappings={audioMappings}
-        />
-      )}
+    <div class="background">
+      <BackgroundMusic />
+      <BackgroundNoise />
+      <div>
+        <video autoPlay loop muted playsInline class="back-video">
+          <source src="assets/wavesbackground.mp4" type="video/mp4"></source>
+        </video>
+        <img src="/assets/overlay.jpg" alt="overlay" class="back-overlay"/>
+      </div>
+      <div className={`app-container ${isAudioPlaying ? 'fade-out' : 'fade-in'}`}>
+        {(
+          <PasscodeInput
+            onSubmit={handlePasscodeSubmit}
+            audioMappings={audioMappings}
+          />
+        )}
+      </div>
     </div>
   );
 };

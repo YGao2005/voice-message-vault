@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Input as BaseInput } from '@mui/base/Input';
 import { styled } from '@mui/system';
+import './PasscodeInput.css';
 
 const Input = styled(BaseInput)(
   // Your existing styling here
@@ -42,14 +43,19 @@ const PasscodeInput = ({ onSubmit, audioMappings, passcode }) => {
 
   return (
     <div>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@300&display=swap');
+      </style>
       <form onSubmit={handleSubmit}>
         <label>
-          Enter Passcode:
-          <Input type="text" value={inputValue} onChange={handleChange} />
+          <input class="css-input" type="text" value={inputValue} onChange={handleChange} />
         </label>
-        <button type="submit">
-          Submit
-        </button>
+        <br />
+        <div class="button-container">
+          <button type="submit">
+            Play
+          </button>
+        </div>
       </form>
     </div>
   );
