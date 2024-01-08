@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/voice-message-vault/static/css/main.40335faf.css",
+    "main.js": "/voice-message-vault/static/js/main.f030aa0d.js",
+    "static/js/787.8469774f.chunk.js": "/voice-message-vault/static/js/787.8469774f.chunk.js",
+    "index.html": "/voice-message-vault/index.html",
+    "main.40335faf.css.map": "/voice-message-vault/static/css/main.40335faf.css.map",
+    "main.f030aa0d.js.map": "/voice-message-vault/static/js/main.f030aa0d.js.map",
+    "787.8469774f.chunk.js.map": "/voice-message-vault/static/js/787.8469774f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40335faf.css",
+    "static/js/main.f030aa0d.js"
+  ]
+}
