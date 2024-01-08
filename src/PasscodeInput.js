@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { styled } from '@mui/system';
 import './PasscodeInput.css';
 
 const PasscodeInput = ({ onSubmit, audioMappings, passcode }) => {
