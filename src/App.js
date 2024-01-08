@@ -52,6 +52,18 @@ const audioMappings = {
   CALM: '/assets/audios/CALM.m4a',
   FAITH: '/assets/audios/FAITH.m4a',
   MORNING: '/assets/audios/MORNING.m4a',
+  NIGHT: '/assets/audios/NIGHT.m4a',
+  BYE: '/assets/audios/BYE.m4a',
+  HELLO: '/assets/audios/HELLO.m4a',
+  INTRO: '/assets/audios/INTRO.m4a',
+  INTUITION:'/assets/audios/INTUITION.m4a',
+  IDEAL: '/assets/audios/IDEAL.m4a',
+  THOUGHT: '/assets/audios/THOUGHT.m4a',
+  EXPECT: '/assets/audios/EXPECT.m4a',
+  DISCIPLINE: '/assets/audios/DISCIPLINE.m4a',
+  TOUCH: '/assets/audios/TOUCH.m4a',
+  WORRY: '/assets/audios/WORRY.m4a',
+  SELFLESS: '/assets/audios/SELFLESS.m4a',
 };
 
 const App = () => {
