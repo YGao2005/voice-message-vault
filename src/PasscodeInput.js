@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Input as BaseInput } from '@mui/base/Input';
 import { styled } from '@mui/system';
 import './PasscodeInput.css';
-
-const Input = styled(BaseInput)(
-  // Your existing styling here
-);
 
 const PasscodeInput = ({ onSubmit, audioMappings, passcode }) => {
   const [inputValue, setInputValue] = useState('');
