@@ -29,7 +29,7 @@ const BackgroundMusic = () => {
       gainNode.gain.setValueAtTime(0, audioContext.currentTime);
 
       // Fade in
-      gainNode.gain.linearRampToValueAtTime(0.03, audioContext.currentTime + 5); // Adjust the duration as needed
+      gainNode.gain.linearRampToValueAtTime(0.05, audioContext.currentTime + 5); // Adjust the duration as needed
 
       backgroundMusic.addEventListener('ended', () => {
         // Fade out when the audio ends

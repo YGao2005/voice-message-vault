@@ -29,7 +29,7 @@ function BackgroundNoise() {
       gainNode.gain.setValueAtTime(0, audioContext.currentTime);
 
       // Fade in
-      gainNode.gain.linearRampToValueAtTime(0.1, audioContext.currentTime + 5); // Adjust the duration as needed
+      gainNode.gain.linearRampToValueAtTime(0.12, audioContext.currentTime + 5); // Adjust the duration as needed
 
       backgroundNoise.addEventListener('ended', () => {
         // Fade out when the audio ends
